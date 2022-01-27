@@ -16,7 +16,7 @@ from anova import anova
 app = Flask(__name__)
 app.wsgi_app = ProxyFix(app.wsgi_app)
 api = Api(app)
-#server_path = r"C:\Users\Harish\PycharmProjects\cceproject\data\raw_data"
+#server_path = r"C:\Users\Monica\PycharmProjects\cceproject\data\raw_data"
 
 
 if os.path.exists(os.path.join(os.path.expanduser("~"), "serverdata")):
@@ -66,7 +66,7 @@ class upload_file(Resource):
             #if 'file' not in request.files:
             #    return "No file found"
             file = args.get('file')
-            #server_path = r"C:\Users\Harish\PycharmProjects\cceproject\data\raw_data"
+            #server_path = r"C:\Users\Monica\PycharmProjects\cceproject\data\raw_data"
             #file = request.files['file']
 
             path = os.path.join(os.path.join(server_path, requestid + "\\" + "rawdata"))
