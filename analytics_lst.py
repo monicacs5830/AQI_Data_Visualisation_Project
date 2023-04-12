@@ -1,1 +1,0 @@
-analytics = {"analytics":["simple_regression", "anova"]}
